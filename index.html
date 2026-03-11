@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Translator - En-Fi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Outfit:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <header>
+        <h1>Sana<span class="accent">AI</span></h1>
+        <p class="subtitle">Voice Translator</p>
+      </header>
+
+      <div class="translator-card">
+        <div class="controls">
+          <div class="toggle-container">
+            <span class="lang-label" id="lang-from">EN</span>
+            <label class="switch">
+              <input type="checkbox" id="lang-toggle">
+              <span class="slider round"></span>
+            </label>
+            <span class="lang-label" id="lang-to">FI</span>
+          </div>
+
+          <button id="mic-btn" class="mic-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z" />
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2" />
+              <line x1="12" y1="19" x2="12" y2="22" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="interaction-area">
+          <div class="voice-feedback">
+            <div class="bars" id="voice-bars">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="output-sections">
+            <div class="output-group">
+              <h3>Recognized Text</h3>
+              <div id="original-text" class="text-box">Speak something...</div>
+            </div>
+
+            <div class="output-group">
+              <h3>Translation</h3>
+              <div id="translated-text" class="text-box placeholder">Translation will appear here</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Powered by SanaAI & Web Speech API</p>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
