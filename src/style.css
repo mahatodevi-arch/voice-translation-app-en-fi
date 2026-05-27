@@ -1,19 +1,26 @@
 :root {
-  --primary: #2563eb;
-  /* Royal Blue */
+  --primary: #2563eb; /* Royal Blue */
   --primary-glow: rgba(37, 99, 235, 0.2);
-  --bg-dark: #f8fafc;
-  /* Very Light Background */
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --text-main: #1e293b;
-  /* Dark Slate Text */
-  --text-muted: #334155;
-  /* Darker Muted Text for Contrast */
+  --bg-light: #f8fafc; /* Light background */
+  --bg-dark: #0f172a; /* Dark background */
+  --card-bg-light: rgba(255, 255, 255, 0.8);
+  --card-bg-dark: rgba(30, 41, 59, 0.8);
+  --text-main-light: #0f172a; /* Dark text */
+  --text-main-dark: #f1f5f9; /* Light text */
+  --text-muted: #475569;
   --accent: #3b82f6;
-  /* Modern Blue */
-  --border: rgba(0, 0, 0, 0.05);
-  --glass-border: rgba(0, 0, 0, 0.05);
+  --border-light: rgba(0, 0, 0, 0.05);
+  --border-dark: rgba(255, 255, 255, 0.1);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--bg-dark);
+    --card-bg: var(--card-bg-dark);
+    --text-main: var(--text-main-dark);
+    --border: var(--border-dark);
+  }
 }
 
 * {
