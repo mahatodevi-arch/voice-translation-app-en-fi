@@ -58,3 +58,68 @@ SanaAI is a real-time, voice-sensing translation application that bridges commun
 
 ---
 *Built with ❤️ for real-time communication.*
+
+---
+
+## 📋 Anti-Gravity Translation App Overview
+
+An intuitive web application that translates live voice input between English and Finnish with near-zero latency.
+
+### 1️⃣ Code Generation
+The core logic was built using **Anti-Gravity**. The prompt used:
+
+> Give me a code for making a language translator which listens and translates the language to Finnish language. If the language is Finnish, it converts into English. I want output in text, but input should be live voice. There should be no latency. I should have a toggle button to have choice from English to Finnish or Finnish to English.
+
+### 2️⃣ Local Environment Setup
+Since this application uses the Web Speech API, it must run in a secure context (local server) to access the microphone.
+
+1. Navigate to the project directory:
+   ```bash
+   cd "Translation_app"
+   ```
+2. Launch the local server with **npx serve**:
+   ```bash
+   npx serve
+   ```
+3. Open in browser:
+   ```bash
+   http://localhost:3000
+   ```
+   (Use Google Chrome or Microsoft Edge for full Web Speech API support.)
+
+### 📸 Screenshots
+*Placeholder images for UI*: (Add actual screenshots later)
+
+![Demo](screenshot_demo.png)
+
+### 📤 How to Move to GitHub
+1. **Create a repository** on GitHub (e.g., `anti-gravity-translator`).
+2. **Initialize Git locally**:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit: Anti-gravity translator ready for deployment"
+   ```
+3. **Link and push**:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/anti-gravity-translator.git
+   git branch -M main
+   git push -u origin main
+   ```
+4. Verify on GitHub that the files appear.
+
+### 🛠️ Home Work Task
+Tweak your application using **Gemini CLI**. Upload the link of the tweaked Git repo in a doc file.
+
+### 🤖 Gemini CLI Overview
+Installation (using npx):
+```bash
+npx @google/gemini-cli
+```
+Or install globally:
+```bash
+npm install -g @google/gemini-cli
+```
+Authentication options, basic usage, and examples are documented in the Gemini CLI docs.
+---
+
