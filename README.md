@@ -1,6 +1,6 @@
 # SanaAI - Voice Translation App
 
-SanaAI is a real-time, voice-sensing translation application that bridge communication between **English** and **Finnish**. Designed with a focus on low-latency and a premium user experience, it allows users to speak naturally and see instant translations.
+SanaAI is a real-time, voice-sensing translation application that bridges communication between **English** and **Finnish**. Designed with a focus on low-latency and a premium user experience, it allows users to speak naturally and see instant translations. (App name is DeviAI)
 
 ## 🚀 Features
 
